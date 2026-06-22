@@ -1,0 +1,140 @@
+body {
+    background-color: black;
+    color: grey;
+    margin: 40px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: lightblue;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+a:link {
+    color: royalblue;
+    background-color: darkblue;
+}
+
+a:visited {
+    color: purple;
+    background-color: lavender;
+}
+
+a:hover {
+    color: white;
+    background-color: yellowgreen;
+}
+
+a:active {
+    color: white;
+    background-color: yellow;
+}
+
+section {
+    padding: 20px;
+    margin-bottom: 25px;
+    border: 2px solid grey;
+}
+
+#my_background {
+    background-color: lightsteelblue;
+    color: black;
+}
+
+#my_interests {
+    background-color: lightgoldenrodyellow;
+    color: black;
+}
+
+#my_background h2,
+#my_interests h2 {
+    color: darkolivegreen;
+    border-bottom: 1px solid darkolivegreen;
+}
+
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: lightsteelblue;
+    color: midnightblue;
+    border: 2px solid midnightblue;
+}
+
+button:hover {
+    background-color: yellowgreen;
+    color: white;
+}
+
+#rail_image {
+    border: 3px solid grey;
+    padding: 8px;
+    background-color: white;
+    max-width: 400px;
+    height: auto;
+}
+
+#train_box {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 120px;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: darkblue;
+    color: white;
+    border: 3px solid lightblue;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.ux_image {
+    display: block;
+    max-width: 350px;
+    width: 90%;
+    height: auto;
+    margin: 20px 0;
+    border: 2px solid grey;
+    background-color: white;
+    padding: 10px;
+}
+
+.site_map_image {
+    display: block;
+    max-width: 500px;
+    width: 60%;
+    height: auto;
+    margin: 20px auto;
+    border: 2px solid grey;
+    background-color: white;
+    padding: 10px;
+}
+
+.prototype,
+.wireframes,
+.site_map {
+    padding: 20px;
+    margin-bottom: 25px;
+    border: 2px solid grey;
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Haochen Zhang | Transit Planning Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="stylesheet" href="css/custom.css" />
+  </head>
+
+  <body class="bg-slate-100 text-slate-900">
+    <div class="max-w-6xl mx-auto px-4">
+      <nav
+        x-data="{ open: false }"
+        class="bg-white mt-4 rounded-2xl shadow-md px-6 py-4"
+      >
+        <div class="flex items-center justify-between">
+          <a
+            href="professional_site.html"
+            class="text-xl font-bold text-blue-900"
+          >
+            Haochen Zhang
+          </a>
+
+```
+      <button
+        @click="open = !open"
+        class="md:hidden bg-blue-900 text-white px-4 py-2 rounded-lg"
+      >
+        Menu
+      </button>
+
+      <div class="hidden md:flex gap-6 text-blue-900 font-semibold">
+        <a href="professional_services.html" class="hover:text-blue-500">
+          Services
+        </a>
+        <a href="professional_contact.html" class="hover:text-blue-500">
+          Contact
+        </a>
+      </div>
+    </div>
+
+    <div
+      x-show="open"
+      class="md:hidden mt-4 space-y-3 text-blue-900 font-semibold"
+    >
+      <a href="professional_services.html" class="block">
+        Services
+      </a>
+      <a href="professional_contact.html" class="block">
+        Contact
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <section
+      class="professional-hero text-white mt-8 rounded-3xl p-8 md:p-12 lg:p-16"
+    >
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <p class="uppercase tracking-[0.25em] text-blue-200 text-sm">
+            Transit Planning Portfolio
+          </p>
+
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mt-4">
+            Urban transportation, rail systems, and data-informed planning.
+          </h1>
+
+          <p class="text-lg md:text-xl mt-6 text-blue-100">
+            I am interested in how transit systems connect neighborhoods,
+            campuses, workplaces, and public spaces.
+          </p>
+
+          <div class="mt-8 flex flex-col sm:flex-row gap-4">
+            <a
+              href="professional_services.html"
+              class="bg-white text-blue-900 px-6 py-3 rounded-xl font-bold text-center"
+            >
+              View Services
+            </a>
+
+            <a
+              href="professional_contact.html"
+              class="border border-white px-6 py-3 rounded-xl font-bold text-center"
+            >
+              Contact Me
+            </a>
+          </div>
+        </div>
+
+        <div
+          x-data="{
+            current: 0,
+            images: [
+              'images/wireframe_home.png',
+              'images/wireframe_routes.png',
+              'images/wireframe_map.png'
+            ]
+          }"
+          class="bg-white text-slate-900 rounded-3xl p-4 professional-card"
+        >
+          <img
+            :src="images[current]"
+            alt="Transit planning portfolio carousel"
+            class="professional-image w-full max-h-[420px] object-contain bg-slate-100"
+          />
+
+          <div class="flex justify-between mt-4">
+            <button
+              @click="current = current === 0 ? images.length - 1 : current - 1"
+              class="bg-slate-800 text-white px-4 py-2 rounded-lg"
+            >
+              Previous
+            </button>
+
+            <button
+              @click="current = current === images.length - 1 ? 0 : current + 1"
+              class="bg-blue-700 text-white px-4 py-2 rounded-lg"
+            >
+              Next
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+      <div class="bg-white p-6 rounded-2xl professional-card">
+        <h2 class="text-[24px] font-bold text-blue-900">
+          Transit Research
+        </h2>
+        <p class="mt-3 text-slate-700">
+          Research on ridership, stations, accessibility, and urban travel
+          behavior, etc.
+        </p>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl professional-card">
+        <h2 class="text-[24px] font-bold text-blue-900">
+          Spatial Analysis
+        </h2>
+        <p class="mt-3 text-slate-700">
+          Mapping and analysis for urban planning, station areas, and
+          transportation systems.
+        </p>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl professional-card">
+        <h2 class="text-[24px] font-bold text-blue-900">
+          Web Presentation
+        </h2>
+        <p class="mt-3 text-slate-700">
+          Clear web-based presentation of planning projects, maps, and
+          design ideas.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center text-slate-500 py-8">
+    Created for Web Design Course, Summer 2026
+  </footer>
+</div>
+```
+
+  </body>
+</html>

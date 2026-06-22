@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Contact | Haochen Zhang</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="stylesheet" href="css/custom.css" />
+  </head>
+
+  <body class="bg-slate-100 text-slate-900">
+    <div class="max-w-6xl mx-auto px-4">
+      <nav
+        x-data="{ open: false }"
+        class="bg-white mt-4 rounded-2xl shadow-md px-6 py-4"
+      >
+        <div class="flex items-center justify-between">
+          <a
+            href="professional_site.html"
+            class="text-xl font-bold text-blue-900"
+          >
+            Haochen Zhang
+          </a>
+
+```
+      <button
+        @click="open = !open"
+        class="md:hidden bg-blue-900 text-white px-4 py-2 rounded-lg"
+      >
+        Menu
+      </button>
+
+      <div class="hidden md:flex gap-6 text-blue-900 font-semibold">
+        <a href="professional_services.html" class="hover:text-blue-500">
+          Services
+        </a>
+        <a href="professional_contact.html" class="hover:text-blue-500">
+          Contact
+        </a>
+      </div>
+    </div>
+
+    <div
+      x-show="open"
+      class="md:hidden mt-4 space-y-3 text-blue-900 font-semibold"
+    >
+      <a href="professional_services.html" class="block">
+        Services
+      </a>
+      <a href="professional_contact.html" class="block">
+        Contact
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="mt-8 bg-white rounded-3xl p-8 professional-card">
+      <p class="uppercase tracking-[0.25em] text-blue-700 text-sm">
+        Contact
+      </p>
+
+      <h1 class="text-4xl md:text-5xl font-bold text-blue-950 mt-4">
+        Connect with me
+      </h1>
+
+      <p class="mt-5 text-lg text-slate-700 max-w-3xl">
+        This professional site presents my interests in transportation,
+        urban planning, transit systems, and web-based communication.
+      </p>
+    </section>
+
+    <section class="grid md:grid-cols-2 gap-6 mt-8">
+      <div class="bg-white rounded-2xl p-6 professional-card">
+        <h2 class="text-[24px] font-bold text-blue-900">
+          Professional Interests
+        </h2>
+
+        <ul class="mt-4 space-y-3 text-slate-700">
+          <li>Transportation planning</li>
+          <li>Urban rail systems</li>
+          <li>Station-area analysis</li>
+          <li>Web design and communication</li>
+        </ul>
+      </div>
+
+      <div class="bg-white rounded-2xl p-6 professional-card">
+        <h2 class="text-[24px] font-bold text-blue-900">
+          Navigation
+        </h2>
+
+        <div class="mt-4 flex flex-col gap-3">
+          <a
+            href="professional_site.html"
+            class="bg-blue-900 text-white px-5 py-3 rounded-xl text-center"
+          >
+            Back to Professional Home
+          </a>
+
+          <a
+            href="index.html"
+            class="bg-slate-700 text-white px-5 py-3 rounded-xl text-center"
+          >
+            Back to Personal Website
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center text-slate-500 py-8">
+    Created for Web Design Course, Summer 2026
+  </footer>
+</div>
+```
+
+  </body>
+</html>

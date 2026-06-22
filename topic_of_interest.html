@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Urban Rail Systems</title>
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- Media query for narrow browser width -->
+    <link
+      rel="stylesheet"
+      media="only screen and (max-width: 480px)"
+      href="css/mobile.css"
+    />
+
+    <!-- Media query for medium browser width -->
+    <link
+      rel="stylesheet"
+      media="only screen and (min-width: 481px) and (max-width: 960px)"
+      href="css/tablet.css"
+    />
+
+    <!-- Media query for full browser width -->
+    <link
+      rel="stylesheet"
+      media="only screen and (min-width: 961px)"
+      href="css/desktop.css"
+    />
+
+    <!-- Prevent smartphones from scaling the page by default -->
+    <meta name="viewport" content="initial-scale=1" />
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>Urban Rail Systems</h1>
+        <p>Personal Website</p>
+      </header>
+
+      <main>
+        <div class="columns">
+          <section class="column1">
+            <p>
+              Urban rail systems are one of my topics of interest. They connect
+              neighborhoods, universities, workplaces, airports, and city centers.
+              A good rail system can make a city easier to use.
+            </p>
+
+            <h2>Why I am interested in this topic</h2>
+            <p>
+              I am interested in how subway, metro, and regional rail systems shape
+              daily travel. Stations are not only transportation spaces, they are also
+              public spaces where people transfer, wait, walk, shop, eat, and experience
+              the city.
+            </p>
+            <p>
+              One public transportation agency I often look at is
+              <a href="https://new.mta.info/">the Metropolitan Transportation Authority</a>.
+            </p>
+          </section>
+
+          <section class="column2">
+            <h2>Interactive Rail Facts</h2>
+            <p id="rail_fact">
+              Click the button below to reveal a short fact about urban rail systems.
+            </p>
+            <button id="fact_button">Show Rail Fact</button>
+
+            <h2>Image Swap</h2>
+            <p>
+              Move your mouse over the image below. The image will change when your
+              mouse is over it, and it will change back when your mouse leaves.
+            </p>
+            <img
+              id="rail_image"
+              src="images/photo5.jpg"
+              alt="Urban Rail in France"
+              width="400"
+            />
+          </section>
+          
+          <section class="column3">
+            <h2>Animation</h2>
+            <p>
+              Click the button below to move the train box.
+            </p>
+            <button id="move_train">Move the Train</button>
+            <div id="train_box">
+              Train
+            </div>
+
+            <p>
+              <a href="index.html">Back to Home Page</a>
+            </p>
+            <p>
+              <a href="about_me.html">Back to About Me</a>
+            </p>
+          </section>
+        </div>
+      </main>
+
+      <footer>
+        <p>Created for Web Design Summer 2026</p>
+      </footer>
+    </div>
+  </body>
+</html>

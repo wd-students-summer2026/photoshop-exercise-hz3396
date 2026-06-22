@@ -1,0 +1,11 @@
+.professional-card {
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.18);
+}
+
+.professional-hero {
+    background: linear-gradient(135deg, #0f172a, #1e3a8a);
+}
+
+.professional-image {
+    border-radius: 18px;
+}

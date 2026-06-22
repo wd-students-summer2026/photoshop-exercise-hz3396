@@ -1,0 +1,58 @@
+body {
+    margin: 10px;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+header,
+footer {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: darkslategray;
+    color: white;
+    border: 2px solid grey;
+    margin-bottom: 15px;
+}
+
+main {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.columns {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.column1,
+.column2,
+.column3 {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    float: none;
+    clear: both;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
